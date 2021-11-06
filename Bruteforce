@@ -11,3 +11,6 @@ crunch 4 4 -f /usr/share/crunch/charset.lst mixalpha # Only length 4 using chars
 ==============================================================================
 # Hydra 
 hydra -t 1 -V -f -l administrator -P /usr/share/wordlists/rockyou.txt 10.10.10.10 smb
+
+
+hashcat.exe -m 18200 -a 3 hash.txt ?u?l?l?l?l?l?l?l?l?d?s -o cracked.txt --force -D 1,2
