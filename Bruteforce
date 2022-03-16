@@ -6,6 +6,10 @@
 crunch 4 6 0123456789ABCDEF -o crunch1.txt #From length 4 to 6 using that alphabet
 crunch 4 4 -f /usr/share/crunch/charset.lst mixalpha # Only length 4 using charset mixalpha
 
+# cewl
+
+ewl -d 2 -m 5 -w docswords.txt http://store.djewelry.htb/
+
 ==============================================================================
 [+] Hydra 
 ==============================================================================
